@@ -16,6 +16,7 @@ class MouseInvert {
 	private createPass() {
 		const shader: THREE.Shader = {
 			uniforms: {
+				tDiffuse: { value: null },
 				u_screenAspect: { value: gl.size.aspect },
 				u_mouse: { value: new THREE.Vector2() },
 			},
